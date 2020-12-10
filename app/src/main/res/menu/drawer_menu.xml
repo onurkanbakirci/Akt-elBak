@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:title="@string/drawerClose"
+            android:icon="@drawable/ic_close"
+            android:id="@+id/drawerClose"
+            />
+        <item
+            android:title="@string/drawerHome"
+            android:icon="@drawable/ic_home"
+            android:id="@+id/drawerHome"
+            />
+        <item
+            android:title="@string/drawerCatalogs"
+            android:icon="@drawable/ic_catalog"
+            android:id="@+id/drawerCatalog"
+            />
+        <item
+            android:title="@string/drawerSearchProducts"
+            android:icon="@drawable/ic_search"
+            android:id="@+id/drawerSearchProducts"
+            />
+        <item
+            android:id="@+id/drawerStarProducts"
+            android:title="@string/drawerStarProducts"
+            android:icon="@drawable/ic_star"
+            />
+        <item
+            android:id="@+id/drawerStarCatalogs"
+            android:title="@string/drawerStarCatalogs"
+            android:icon="@drawable/ic_catalog_fav"
+            />
+        <item
+            android:id="@+id/drawerShare"
+            android:title="@string/drawerShare"
+            android:icon="@drawable/ic_share_default"
+            />
+        <item
+            android:id="@+id/drawerInfo"
+            android:title="@string/drawerInfo"
+            android:icon="@drawable/ic_info"
+            />
+    </group>
+
+</menu>

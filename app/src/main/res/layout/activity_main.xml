@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="mainActivityDataBinding"
+            type="com.onurkanbakirci.aktuelBak.ui.MainActivityViewModel" />
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/mainActivityDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeActivity"
+        tools:openDrawer="start"
+        android:fitsSystemWindows="false"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/topSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:background="@drawable/ic_top_view"
+                >
+                <Button
+                    android:id="@+id/btnToggle"
+                    style="@style/MenuButtonStyle"
+                    android:background="@{mainActivityDataBinding.icDrawer}"
+                    android:onClick="@{mainActivityDataBinding::toggleBtn}"
+                    />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_below="@+id/topSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_container"
+                android:layout_above="@+id/bottom_navigation"
+                />
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                app:itemIconTint="@color/colorPrimary"
+                app:itemTextColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_nav"
+                android:background="?android:attr/windowBackground"
+                android:layout_alignParentBottom="true"
+                app:onNavigationItemSelectedListener="@{mainActivityDataBinding::onBottomMenuClicked}"
+                />
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#42000000"
+            android:visibility="invisible"
+            >
+            <ProgressBar
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+        </FrameLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/homeNavigationView"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/drawer_menu"
+            android:background="@color/colorPrimary"
+            app:itemTextColor="@color/white"
+            app:itemIconTint="@color/white"
+            app:navigationItemSelectedListener="@{mainActivityDataBinding::onNavigationItemSelected}"
+            />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF48B2E6</color>
+    <color name="colorPrimaryDark">#7C9FC4</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <!-- drawer item bck color -->
+    <color name="drawerItemBck">#B3A6A9</color>
+
+    <color name="product_overview_bck_color">#A59E9E</color>
+
+    <color name="starColor">#EFD469</color>
+
+    <color name="separator">#efefef</color>
+
+
+</resources>

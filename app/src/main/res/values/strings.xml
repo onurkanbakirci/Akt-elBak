@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Aktüel Bak</string>
+
+    <!-- drawerMenuStrings -->
+    <string name="drawerClose"></string>
+    <string name="drawerHome">Ana Menü</string>
+    <string name="drawerMarkets">Market Ara</string>
+    <string name="drawerCatalogs">Kataloglar</string>
+    <string name="drawerSearchProducts">Ürün ara</string>
+    <string name="drawerStarProducts">Favori Ürünler</string>
+    <string name="drawerStarCatalogs">Favori Kataloglar</string>
+    <string name="drawerContact">Bize Ulaşın</string>
+    <string name="drawerInfo">Hakkında</string>
+    <string name="drawerShare">Uygulamayı Paylaş</string>
+
+    <!-- bottomnavMenu -->
+    <string name="bottom_nav_home">Ana Menü</string>
+    <string name="bottom_nav_catalog">Kataloglar</string>
+    <string name="bottom_nav_market">Marketler</string>
+    <string name="bottom_nav_search_product">Ürün ara</string>
+    <string name="bottom_nav_favorite_product">Favoriler</string>
+
+    <!-- empty fav text-->
+    <string name="emptyFavCatalog">Favori kataloğunuz bulunmamaktadır.</string>
+    <string name="emptyFavProduct">Favori ürününüz bulunmamaktadır.</string>
+    <string name="title_activity_maps">Map</string>
+    <!-- searchViewQueryHint -->
+    <string name="searchViewQueryHint">Aradığınız ürünün ismini buraya girin.</string>
+    <string name="input_wished_product_name">Aradığınız ürünün ismini giriniz.</string>
+    <string name="notFoundProduct">Ürün bulunamadı.</string>
+
+    <string name="con_err_str">İnternet bağlantınızı kontrol ediniz.
+                                Tekrar denemek için ünlem simgesine dokunuzunuz.</string>
+
+    <string name="aboutUs">Version 1.0.2 \n\nCopyright © 2020, Aktüel Bak\nOnurkan Bakırcı</string>
+    <string name="informationText">\tBu uygulama ile binlerce şubesi bulunan mağazaların aktüel ürün ve kataloglarına kolaylıkla erişim sağlayabilirsiniz.
+                                    Uygulama içinde listenen ürün ve katalogları favorilere ekleyebilir ve daha sonra favoriler kısmından bu ürün ve katalogları kolaylıkla görüntüleyebilirsiniz.
+                                    Ayrıca istediğiniz katalog ve ürünleri paylaşabilirsiniz.\n\n
+                                    \tUygulama hakkındaki görüş ve önerilerinizi, eklenmesini istediğiniz
+                                    markaları mail yoluyla iletebilirsiniz.
+    </string>
+    <string name="emailAddress">aktuelbak@gmail.com</string>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="catalogFragmentViewModel"
+            type="com.onurkanbakirci.aktuelBak.ui.fragments.catalog.CatalogFragmentViewModel" />
+        <variable
+            name="catalogs"
+            type="com.onurkanbakirci.aktuelBak.data.model.Catalog" />
+    </data>
+        <RelativeLayout
+            android:id="@+id/bannerSection"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="320dp"
+            >
+            <TextView
+                android:id="@+id/catalogDateTitle"
+                android:textColor="@color/black"
+                android:layout_marginVertical="5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@{catalogs.date}"
+                />
+            <ImageView
+                android:layout_below="@+id/catalogDateTitle"
+                android:id="@+id/catalogImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:image="@{catalogs.img}"
+                android:onClick="@{()->catalogFragmentViewModel.fullScreenBanner(catalogs)}"
+                />
+            <ImageView
+                android:layout_below="@id/catalogImage"
+                android:id="@+id/catalogStarBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_star"
+                android:onClick="@{()->catalogFragmentViewModel.isClickedCatalog(catalogs)}"
+                />
+            <ImageView
+                android:layout_below="@+id/catalogStarBtn"
+                android:id="@+id/seperatorBIM"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/seperator"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                />
+        </RelativeLayout>
+
+</layout>
